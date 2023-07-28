@@ -10,15 +10,17 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/style.css">
 	<script src="script.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/2935ecff8c.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
         <nav>
             <ul>
-                <li>projets</li>
-                <li>contact</li>
-                <li>login</li>
+                <li><a href="index.html#portfolio">projets</a></li>
+                <li><a href="index.html#contact">contact</a></li>
+                <li id="login-change">login</li>
                 <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
             </ul>
         </nav>
@@ -27,14 +29,16 @@
         <section id="login">
             <h2 id="titre-login">Log In</h2>
             <form id="log-form">
-                <p class="form-titre">Email</p>
+                <p class="form-titre2">Email</p>
                 <input type="text" class="input-form">  
-                <p class="form-titre">Mot de passe</p> 
+                <p class="form-titre2">Mot de passe</p> 
                 <input type="text" class="input-form">
+                <p id="error">Mot de passe ou nom d'utilisateur inccorect</p>
                 <input type="submit" value="Se connecter" id="submit-form">
             </form>
             <a href=""><p id="password">Mot de passe oublié</p></a>
         </section>
+        
     </main>
 </body>
 </html>
